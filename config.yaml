@@ -8,6 +8,18 @@ news_sites:
   elpais:
     url: https://elpais.com
     queries:
-      homepage_article_links: ''
-      article_body: ''
-      article_title: ''
+      homepage_article_links: '.articulo-titulo a'
+      article_body: '.articulo-cuerpo'
+      article_title: '.articulo-titulo'
+  clarin:
+    url: https://www.clarin.com/
+    queries:
+      homepage_article_links: '.content-nota list-format twoxone_foto_vertical  a'
+      article_body: '.body-nota  p'
+      article_title: '.title  h1'
+  data24:
+    url: https://data24.com.ar/
+    queries:
+      homepage_article_links: '.tm-article-item a'
+      article_body: '.entry-content p'
+      article_title: '.single-category h1'
