@@ -10,16 +10,16 @@ news_sites:
     queries:
       homepage_article_links: '.articulo-titulo a'
       article_body: '.articulo-cuerpo'
-      article_title: '.articulo-titulo'
-  clarin:
-    url: https://www.clarin.com/
+      article_title: '.articulo-titulo' 
+  washingtonpost:
+    url: https://www.washingtonpost.com
     queries:
-      homepage_article_links: '.content-nota list-format twoxone_foto_vertical  a'
-      article_body: '.body-nota  p'
-      article_title: '.title  h1'
+      homepage_article_links: '.headline a'
+      article_body: '.topper-headline h1'
+      article_title: 'article.paywall'
   data24:
     url: https://data24.com.ar/
     queries:
       homepage_article_links: '.tm-article-item a'
       article_body: '.entry-content p'
-      article_title: '.single-category h1'
+      article_title: '.entry-title'
